@@ -51,7 +51,7 @@ const guideSdk = new Guide(
     guideSdk.renderDom(+step + 1);
   },
   (step) => {
-    //上一步回调，点击下一步需要在这里调用renderDom(+step+1)
+    //上一步回调，点击下一步需要在这里调用renderDom(+step-1)
     guideSdk.renderDom(+step - 1);
   },
   (step) => {
